@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { ClerkProvider } from "@clerk/nextjs";
 import { Inter, Roboto_Slab } from "next/font/google";
+
 import "@/styles/globals.css";
 import ClientProviders from "./ClientProviders";
 
@@ -26,12 +28,14 @@ type Props = {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} ${roboto_slab.variable} font-sans bg-background text-foreground`}
-      >
-        <ClientProviders>{children}</ClientProviders>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`${inter.variable} ${roboto_slab.variable} font-sans bg-background text-foreground`}
+        >
+          <ClientProviders>{children}</ClientProviders>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

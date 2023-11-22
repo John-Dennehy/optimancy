@@ -9,9 +9,12 @@ type Props = {
 export function NavLinks({ segmentRoute, navLinks }: Props) {
   return (
     <nav>
-      <ul className="flex flex-col md:flex-row">
+      <ul className="flex flex-col md:flex-row justify-center place-items-center gap-2">
         {navLinks?.map((link) => (
-          <li className="text-xl font-semibold" key={link.href}>
+          <li
+            className="text-xl font-semibold whitespace-nowrap"
+            key={link.href}
+          >
             <Link href={`${segmentRoute}${link.href}`}>{link.name}</Link>
           </li>
         ))}

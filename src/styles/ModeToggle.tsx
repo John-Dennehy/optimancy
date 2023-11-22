@@ -21,7 +21,7 @@ export function ModeToggle() {
         <Button
           variant="secondary"
           size="icon"
-          className="rounded-full border border-solid border-white border-foreground bg-background text-foreground"
+          className="rounded-full  border-solid border-foreground border-2 p-1 w-11 h-11 place-items-center  justify-center"
         >
           <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />

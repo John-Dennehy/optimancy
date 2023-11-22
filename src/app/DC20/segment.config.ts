@@ -6,7 +6,10 @@ export const config: SegmentConfig = {
   // subtitle: "subtitle testing",
   description:
     "DC20 is brand new Tabletop Roleplaying Game that is designed to be efficient, simple, intuitive, tactical, fast paced, and customizable.",
-  // navLinks: [{ name: "Home", href: "/" }],
+  navLinks: [
+    { name: "Home", href: "/" },
+    { name: "My Characters", href: "/characters/" },
+  ],
 };
 
 export default config;

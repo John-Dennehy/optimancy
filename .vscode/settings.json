@@ -5,7 +5,15 @@
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "cSpell.words": ["clsx", "Optimancer", "Optimancers", "Optimancy", "roboto"],
+  "cSpell.words": [
+    "clsx",
+    "nextjs",
+    "Optimancer",
+    "Optimancers",
+    "Optimancy",
+    "roboto",
+    "trpc"
+  ],
 
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
