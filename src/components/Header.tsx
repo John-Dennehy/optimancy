@@ -18,7 +18,7 @@ export function Header({ config }: Props) {
     <header className="py-2">
       <div className="container mx-auto flex flex-col justify-items-center w-full md:flex-row gap-2 md:place-items-center md:justify-between">
         {/* LEFT */}
-        <section className="first flex flex-col basis-1/2 lg:basis-1/3 place-items-center justify-center  gap-2 md:flex-row md:justify-start">
+        <section className="first flex flex-col basis-1/3 place-items-center justify-center  gap-2 md:flex-row md:justify-start">
           <Button asChild>
             <Link href="/">
               <OptimancyBrand size="3xl" />
@@ -35,14 +35,14 @@ export function Header({ config }: Props) {
         </section>
 
         {/* CENTER */}
-        <section className="center basis-auto place-content-center justify-center">
+        <section className="center hidden lg:flex lg:basis-1/3 place-content-center justify-center">
           <NavLinks
             segmentRoute={segmentRoute ?? "/"}
             navLinks={navLinks ?? []}
           />
         </section>
         {/* RIGHT */}
-        <section className="right-side basis-1/2 lg:basis-1/3 flex flex-row gap-2 w-full justify-center md:justify-end">
+        <section className="right-side basis-1/3 flex flex-row gap-2 w-full justify-center md:justify-end">
           <ModeToggle />
           <SignedIn>
             {/* Mount the UserButton component */}
