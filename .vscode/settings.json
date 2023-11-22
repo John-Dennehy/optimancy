@@ -5,7 +5,7 @@
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "cSpell.words": ["clsx", "Optimancer", "Optimancers", "Optimancy"],
+  "cSpell.words": ["clsx", "Optimancer", "Optimancers", "Optimancy", "roboto"],
 
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
